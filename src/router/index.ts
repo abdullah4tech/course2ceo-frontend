@@ -7,7 +7,9 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: '/dashboard',
+      name: 'Landing',
+      component: () => import('@/views/LandingPage.vue'),
+      meta: { requiresAuth: false, title: 'Home', layout: 'landing' },
     },
     {
       path: '/login',
@@ -20,12 +22,6 @@ const router = createRouter({
       name: 'Register',
       component: () => import('@/views/auth/Register.vue'),
       meta: { requiresAuth: false, layout: 'auth' },
-    },
-    {
-      path: '/design-system',
-      name: 'DesignSystem',
-      component: () => import('@/pages/DesignSystemDemo.vue'),
-      meta: { requiresAuth: false, title: 'Design System' },
     },
     {
       path: '/dashboard',

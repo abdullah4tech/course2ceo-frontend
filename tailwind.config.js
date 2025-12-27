@@ -63,7 +63,14 @@ export default {
           medium: '#d4d4d4',
           strong: '#a3a3a3',
         },
+        landing: {
+          blue: '#0A7FD8',
+          bg: '#E8F4FD',
+          'text-main': '#1A1A2E',
+          'text-body': '#4A5568',
+        },
       },
+
       fontFamily: {
         sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
         display: ['Cal Sans', 'Inter', 'sans-serif'],

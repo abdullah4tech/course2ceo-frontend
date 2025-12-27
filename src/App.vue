@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import AuthLayout from '@/layouts/AuthLayout.vue'
+import LandingLayout from '@/layouts/LandingLayout.vue'
 import DashboardLayout from '@/layouts/DashboardLayout.vue'
 import BaseToast from '@/components/ui/BaseToast.vue'
 import { useToast } from '@/composables/useToast'
@@ -13,10 +14,12 @@ const layout = computed(() => {
   if (route.meta.layout === 'auth') {
     return AuthLayout
   }
+  if (route.meta.layout === 'landing') {
+    return LandingLayout
+  }
   return DashboardLayout
 })
 </script>
-
 
 <template>
   <component :is="layout">
