@@ -17,7 +17,6 @@ import LandingFooter from '@/components/landing/LandingFooter.vue'
       <HeroSection />
       <WhySection />
       <GamificationSection />
-      <CourseGridSection />
       <TestimonialsSection />
       <FinalCTASection />
     </main>
