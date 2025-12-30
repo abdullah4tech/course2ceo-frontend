@@ -1,19 +1,3 @@
-<template>
-  <div class="min-h-screen font-sans">
-    <LandingNavbar />
-    <main>
-      <HeroSection />
-      <WhySection />
-      <GamificationSection />
-      <CourseGridSection />
-      <NewFeaturesSection />
-      <TestimonialsSection />
-      <FinalCTASection />
-    </main>
-    <LandingFooter />
-  </div>
-</template>
-
 <script setup lang="ts">
 import LandingNavbar from '@/components/landing/LandingNavbar.vue'
 import HeroSection from '@/components/landing/HeroSection.vue'
@@ -25,3 +9,18 @@ import TestimonialsSection from '@/components/landing/TestimonialsSection.vue'
 import FinalCTASection from '@/components/landing/FinalCTASection.vue'
 import LandingFooter from '@/components/landing/LandingFooter.vue'
 </script>
+
+<template>
+  <div class="min-h-screen font-sans">
+    <LandingNavbar />
+    <main>
+      <HeroSection />
+      <WhySection />
+      <GamificationSection />
+      <CourseGridSection />
+      <TestimonialsSection />
+      <FinalCTASection />
+    </main>
+    <LandingFooter />
+  </div>
+</template>
